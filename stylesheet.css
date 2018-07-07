@@ -1,0 +1,354 @@
+/*---フォントはあとで変える---*/
+
+body{
+/*--全体のフォント指定--*/
+    font-family: "Noto Sans Japanese";
+/*    font-family:sans-serif;*/
+/*--bodyにデフォルトで付いてるっぽいmarginを消す--*/
+    margin:0;
+/*--全体サイズ指定--*/
+    width:1349px;
+}
+
+
+/*--共通部品--*/
+
+/*--見出し文字要素を間隔あけて見やすく--*/
+h1,h3{
+    letter-spacing:1px;
+}
+
+.heading-image{
+/*--見出しタイトル位置調整用--*/
+    position:relative;
+/*--コンテンツ見出し画像のサイズ調整--*/
+    width:100%;
+    height:450px;
+}
+
+/*--コンテンツ見出し--*/
+.heading-title{
+/*--見出しタイトル位置調整用--*/
+    position:absolute;
+    top:20px;
+    padding:10px 10px 10px 100px;
+/*--見出しタイトル文字調整用--*/
+    background-color:white;
+    font-size:28px; 
+    z-index:10;
+}
+
+/*--コンテンツサイズ調整用--*/
+.container{
+    height:550px;
+    padding:30px 300px;
+}
+
+/*--共通部品--*/
+
+
+/*--【ヘッダー】--*/
+
+/*--ヘッダー画像変えたら変える--*/
+.header-image{
+    width:100%;
+    height:665px;
+    background-image:url(header-image.jpg);
+    background-size:cover;
+/*--ヘッダータイトル位置調整用--*/
+    position:relative;
+}
+
+.header-title{
+/*--ヘッダータイトル位置調整用--*/
+    position:absolute;
+    top:25px;
+    left:25px;
+/*--ヘッダータイトル文字調整用--*/
+    color:white;
+    font-size:60px;
+    width:140px;
+    word-wrap:break-wordbre;
+    line-height:75px;
+    letter-spacing:8px;
+    font-family: "Rounded Mplus 1c";
+
+}
+
+/*--【ヘッダー】--*/
+
+
+/*--【メニュー】--*/
+
+.menu-wrapper{
+/*--メニュー全体を中央ぞろえに--*/
+    text-align:center;
+}
+
+.menu-banner{
+/*--バナーサイズ調整　画像入れたら変える--*/
+    height:65px;
+    width:700px;
+/*--画像いれたら消す--*/
+    background-color:#a7f442;
+}
+
+/*--メニュー見出し文字--*/
+.menu-wrapper h1{
+    margin-top:50px;
+    margin-bottom:15px;
+    font-size:45px;
+}
+/*--メニュー本文＆リンク サイズ調整--*/
+.menu-txt,.menu-link{
+    width:65%;
+    margin:0 auto;
+}
+
+/*--メニュー本文--*/
+.menu-txt{
+    text-align:left;
+    font-size:12x;
+    letter-spacing:1px;
+    line-height:27px;
+}
+
+/*--コンテンツへのリンク--*/
+.menu-link{
+    margin-top:50px;
+}
+
+/*--リンク下線を消す--*/
+.menu-link a{
+    text-decoration:none;
+}
+
+/*--訪問済リンクでも色を変えない--*/
+.menu-link a:visited{
+    color:#000;
+}
+
+.link-item{
+/*--リンク2個設置なので50%--*/
+    width:50%;
+    float:left;
+}
+
+.menu-btn{
+    display:inline-block;
+    color:#b2693e;
+    font-size:70px;
+    margin:0;
+}
+
+/*--.fa-angle-down だとmenu-btnの下にこない(原因不明)---*/
+.link-item .fa-angle-down{
+    margin-top:15px;
+    display:block;
+    font-size:20px;
+}
+
+/*--【メニュー】--*/
+
+
+/*--【コンテンツ1】--*/
+
+.contents1-wrapper{
+    background-color:rgba(154,237,237,0.2);
+}
+
+/*--コンテンツ1の上下サイズ調整--*/
+.contents-section{
+    height:50%;
+    width:100%;
+}
+
+/*--↑を更に2分割ずつ--*/
+.contents1-upper-left,contents1-upper-right,
+.contents1-lower-right,.contents1-lower-left{
+    height:100%;
+    display:inline-block;
+}
+
+.contents1-upper-left,.contents1-lower-right{
+    width:40%;
+}
+
+.contents1-upper-right,.contents1-lower-left{
+    width:55%;
+}
+
+.contents1-upper-left,.contents1-lower-left{
+    float:left;
+}
+
+.contents1-upper-right,.contents1-lower-right{
+    float:right;
+}
+
+/*--左上と右下の画像--*/
+.contents-img{
+    width:90%;
+    height:70%;
+}
+
+/*--左下と右上のテキスト--*/
+.contents-txt{
+    font-weight:bold;
+    font-size:13px;
+    letter-spacing:2px;
+    line-height:23px;
+}
+
+/*--【コンテンツ1】--*/
+
+
+/*--【コンテンツ2】--*/
+
+.contents2-wrapper{
+    background-color:rgba(252, 243, 229,0.5);
+}
+
+.contents2-top,.contents2-bottom{
+    height:50%;
+    width:100%;
+}
+
+.contents2-txt1{
+    width:40%;
+    height:100%;
+    float:left;
+}
+
+.contents2-txt1 p,.contents2-txt2{
+    font-weight:bold;
+    letter-spacing:2px;
+    font-size:13px;
+    line-height:23px;
+}
+
+.contents2-btn{
+    display:inline-block;
+    padding:7px 10px 7px 30px;
+    margin-top:15px;
+    background-color:darkorange;
+    color:black;
+    font-size:13px;
+    font-weight:bold;
+    text-decoration:none;
+}
+
+.fa-angle-right{
+    margin-left:10px;
+}
+
+.contents2-img1,.contents2-img2,.contents2-img3{
+    width:25%;
+    float:left;
+    padding:8px;
+}
+
+.contents2-img1{
+    height:70%;
+}
+
+.contents2-img2{
+    height:100%;
+}
+
+.contents2-img3{
+    height:100%;
+/*--ボックスより上にはみださせる--*/
+    margin-top:-50px;
+}
+
+.contents2-txt2-heading{
+    height:13%;
+    width:38%;
+    float:left;
+/*--ボックスより上にはみださせる--*/
+    margin-top:-50px;
+    padding:5px;
+}
+
+.contents2-txt2-heading h3{
+    margin:0;
+}
+
+.contents2-txt2{
+    display:inline-block;
+    width:65%;
+    height:77%;
+    float:left;
+    margin-left:5px;
+    margin-top:30px;
+}
+
+/*--【コンテンツ2】--*/
+
+
+/*--【フッター】--*/
+
+.footer-wrapper{
+/*--フッターサイズ調整--*/
+    padding:20px 320px 0 320px;
+/*--フッター内背景色--*/
+    background-color:#000;
+/*--フッター内文字色--*/
+    color:#fff;
+}
+
+.footer-title{
+/*--フッターメニューとの間隔調整--*/
+    margin-right:30px;
+/*--p要素にデフォルトで付いてるっぽい上下marginを消す--*/
+    margin-top:0px;
+    margin-bottom:0px;
+/*--フッタータイトルを列左端に置く--*/
+    float:left;
+/*--とりあえず太字。画像にするなら消すこと--*/
+    font-weight:bold;
+}
+
+.footer-memu{
+/*--リストの囲いをフッタータイトルの横にする--*/
+    display: inline-block;
+}
+
+.footer-menu ul{
+/*--リスト要素にデフォルトで付いてる？padding,marginを消す--*/
+    padding:0px;
+    margin:0px;
+}
+
+.footer-menu li{
+/*--リスト要素を左揃えにして並べる--*/
+    float:left;
+/*--リスト要素間の間隔を開ける--*/
+    padding-left:50px;
+/*--リスト上の黒点不要なので消す--*/
+    list-style:none;
+}
+
+/*--リンク下線を消す--*/
+.footer-wrapper a{
+    text-decoration:none;
+}
+
+/*--訪問済リンクでも色を変えない--*/
+.footer-wrapper a:visited{
+    color:white;
+}
+
+.copyright{
+/*--コピーライトを列中心に表示させる--*/
+    display:block;
+    text-align:center;
+/*--blockにデフォルトで付いてるっぽいmarginを消す--*/
+    margin:0;
+/*--コピーライト縦幅調整--*/
+    padding:130px 0 30px 0;
+}
+
+/*--【フッター】--*/
+
