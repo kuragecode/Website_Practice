@@ -1,0 +1,253 @@
+/*タブレット用レイアウト*/
+@media(max-width:1000px){
+
+}
+
+/*スマートフォン用レイアウト*/
+@media(max-width:670px){
+    
+    /*--共通部品--*/
+    
+    .container{
+        width:80%;
+    }
+    
+    /*--コンテンツ見出し--*/
+    .heading-title{
+        font-size:13px;
+    }
+    
+    /*--共通部品--*/
+    
+    /*--【ヘッダー】--*/
+    
+    .header{
+        /*ヘッダータイトル位置調整用*/
+        position:relative;
+    }
+    
+    .header-title{
+        height:60%;
+        width:35px;
+        font-size:35px;
+        line-height:120%;
+        /*ヘッダータイトル位置調整*/
+        position:absolute;
+        top:10px;
+        left:45%;
+        
+    }
+    
+    /*--【ヘッダー】--*/
+
+    
+    /*--【メニュー】--*/
+    
+    .menu-wrapper h1{
+        /*見出しサイズ18px*/
+        font-size:18px;
+    }
+    
+    .menu-txt,.menu-link{
+        /*PCより幅多めに取る*/
+        width:90%;
+    }
+    
+    .menu-link{
+        margin-top:30px;
+    }
+    
+    /*--【メニュー】--*/
+    
+
+    /*--【コンテンツ1】--*/
+    
+    .contents1-wrapper{
+        /*これによりスマホサイズによってコンテンツ1最下部の余白が変わる。並べ替えの都合なので現状は直すの難しそう。*/
+        height:1090px;
+}
+    
+    .contents1-wrapper h3{
+        /*見出しサイズ18px*/
+        font-size:18px;
+        /*SP版は見出し中央寄せ*/
+        text-align:center;
+    }
+    
+    .contents1-upper-left,.contents1-upper-right,
+    .contents1-lower-right,.contents1-lower-left{
+        /*横一杯に使う*/
+        width:100%;
+    }
+    
+    .contents-img{
+        /*見やすいよう少し間隔あける*/
+        margin-top:10%;
+        /*PCでwidth90%にしていたので横一杯に*/
+        width:100%;
+        height:auto;
+    }
+    
+    .contents-section{
+        /*並べ替え調整用*/
+        position:relative;
+    }
+    
+    .contents1-lower-left{
+        /*画像下へ並べ替え*/
+        position:absolute;
+        top:100%;
+        
+    }
+    
+    .contents-txt{
+        font-weight:normal;
+    }
+    
+    /*--【コンテンツ1】--*/
+    
+    
+    /*--【コンテンツ2】--*/
+    
+    .contents2-img1,.contents2-img2{
+        /*画像2つ並べる*/
+        width:50%;
+    }
+    
+    .contents2-txt1,.contents2-txt2-heading,.contents2-txt2{
+        /*img1と2以外は横一杯に使う*/
+        width:100%;
+    }
+    
+    .contents2-wrapper{
+        /*コンテンツ2をまとめて中央寄せ*/
+        text-align:center;
+    }
+    
+    .contents2-wrapper p{
+        /*本文のみ左寄せに戻す*/
+        text-align:left;
+    }
+    
+    .contents2-wrapper h3{
+        /*見出しサイズ18px*/
+        font-size:18px;
+    }
+    
+    .contents2-txt1 h3{
+        margin:0;
+    }
+    
+    .contents2-txt2{
+        margin-top:16px;
+    }
+    
+    .contents2-txt1 p,.contents2-txt2{
+        /*本文サイズ16px*/
+        font-size:16px;
+        font-weight:normal;
+    }
+    
+    .contents2-img3{
+        /*画像1枚なので50%より気持ち大きめ*/
+        width:60%;
+        /*SP表示では上にはみ出させる必要無いため解除*/
+        margin-top:0;
+        /*floatしてると中央寄せできないため解除*/
+        float:none;
+        /*中央寄せ*/
+        display:block;
+        margin:0 auto;
+    }
+    
+    .contents2-txt2-heading{
+        /*SP表示でははみ出させる必要無いため解除*/
+        margin-top:0;
+    }
+    
+    .contents2-top{
+        /*見やすいよう少し間隔あける*/
+        margin-top:10%;
+        /*並べ替え調整用*/
+        position:relative;
+    }
+    
+    .contents2-img1{
+        /*画像底が一列になるよう並べ替え*/
+        position:absolute;
+        bottom:0;
+    }
+    
+    .contents2-txt1{
+        height:80%;
+        /*画像下へ並べ替え*/
+        position:absolute;
+        top:100%;
+    }
+    
+    .contents2-bottom{
+        /*txt1の並べ替えにより被ってしまう為調整*/
+        margin-top:250px;
+    }
+    
+    .contents2-btn{
+        width:100%;
+        padding-left:10px;
+    }
+    
+    /*--【コンテンツ2】--*/
+    
+    
+    /*--【フッター】--*/
+    
+    footer{
+        /*--フッターサイズ調整--*/
+        height:280px;
+        width:100%;
+    }
+    
+    .footer-wrapper{
+        height:100%;
+         /*--フッターサイズ調整--*/
+        padding:20px 30px;
+         /*--タイトル調整用--*/
+        position:relative;
+    }
+    
+    .footer-title,.footer-menu,.copyright{
+        /*--横一杯に使う--*/
+        width:100%;
+    }
+    
+    .footer-title{
+        /*中央寄せ*/
+        text-align: center;
+        /*--タイトルをコピーライト前に--*/
+        position:absolute;
+        top:210px;
+        left:0;
+    }
+    
+    .footer-menu li{
+        /*SP版では左寄せ*/
+        padding-left:0;
+        display: block;
+        /*SP版では縦並び*/
+        float:none;
+        /*メニュー間の間隔調整*/
+        margin-bottom:10px;
+    }
+    
+    .copyright{
+        margin-top:220px;
+        font-size:13px;
+    }
+    
+    .copyright p{
+        /*--p要素にデフォルトで付いてるっぽいmarginを消す--*/
+        margin:0;
+    }
+    
+    /*--【フッター】--*/
+    
+}
