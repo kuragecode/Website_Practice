@@ -29,6 +29,10 @@ h1,h3{
     letter-spacing:1px;
 }
 
+h3{
+    margin:0;
+}
+
 .heading-image{
 /*--見出しタイトル位置調整用--*/
     position:relative;
@@ -49,7 +53,7 @@ h1,h3{
 /*--コンテンツサイズ調整用--*/
 .container{
     width:70%;
-    padding-bottom:3%;
+    padding:3% 0;
     margin:0 auto;
 
 }
@@ -67,17 +71,14 @@ h1,h3{
 
 .header-title{
 /*--ヘッダータイトル位置調整用--*/
-
     position:absolute;
     top:5%;
     left:5%;
 
 /*--ヘッダータイトル文字調整用--*/
-
     color:#fff;
     font-size:60px;
     width:140px;
-    word-wrap:break-wordbre;
     line-height:75px;
     letter-spacing:8px;
     font-family: "Rounded Mplus 1c";
@@ -166,8 +167,10 @@ h1,h3{
 .contents-section{
     height:50%;
     width:100%;
-    margin-top:3%;
 }
+.contents1-bottom{
+    margin-top:30px;
+    }
 
 /*--↑を更に2分割ずつ--*/
 .contents1-upper-left,.contents1-upper-right,
@@ -200,12 +203,10 @@ h1,h3{
 
 /*--左下と右上のテキスト--*/
 .contents1-wrapper h3{
-    margin:3px 0;
     font-size:22px;
 }
 
 .contents-txt{
-    font-weight:bold;
     font-size:16px;
     letter-spacing:1.5px;
     line-height:23px;
@@ -232,7 +233,6 @@ h1,h3{
 }
 
 .contents2-txt1 p,.contents2-txt2{
-    font-weight:bold;
     letter-spacing:2px;
     font-size:13px;
     line-height:23px;
@@ -260,10 +260,6 @@ h1,h3{
 
 .contents2-img1{
     height:70%;
-}
-
-.contents2-img2{
-
 }
 
 .contents2-img3{

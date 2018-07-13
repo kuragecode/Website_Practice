@@ -1,6 +1,91 @@
 /*タブレット用レイアウト*/
-@media(max-width:1000px){
+@media(max-width:1024px){
 
+    /*--【ヘッダー】--*/
+    
+    .header-title{
+        /*--ヘッダータイトル位置調整用--*/
+        top:20px;
+        left:20px;
+        
+        /*--ヘッダータイトル文字調整用--*/
+        font-size:50px;
+        width:120px;
+        line-height:60px;
+    }
+    
+    /*--【ヘッダー】--*/
+    
+    
+    /*--【コンテンツ1】--*/
+    
+    .contents-img{
+        margin-top:15px;
+    }
+    
+    /*--左上と右下の画像--*/
+    .contents-img{
+        width:100%;
+        height:auto;
+    }
+    
+    .contents1-lower-left{
+        margin-top:10px;
+    }
+    
+    /*--【コンテンツ1】--*/
+    
+    
+    /*--【コンテンツ2】--*/
+
+    .contents2-txt2-heading{
+        width:70%;
+        height:auto;
+        padding:0;
+    }
+    
+    .contents2-txt2-heading,.contents2-img3{
+        /*タブレット表示でははみ出させる必要無いため解除*/
+        margin-top:0;
+    }
+    
+    .contents2-txt1{
+        margin-right:40px;
+    }
+    
+    .contents2-txt2{
+        /*はみだし解除＆margin-top微調整*/
+        margin:13px 0 0 0;
+    }
+    
+    .contents2-img3{
+        margin-right:25px;
+    }
+    
+    .contents2-bottom{
+        margin-top:25px;
+    }
+    
+    /*--【コンテンツ2】--*/
+    
+    
+    /*--【フッター】--*/
+    
+    .footer-wrapper{
+        padding:20px 0%;
+    }
+    
+    .footer-menu{
+        padding-left:2%;
+    }
+    
+    .footer-menu li{
+        /*--リスト要素間の間隔を調整--*/
+        padding-left:30px;
+        text-align:center;
+    }
+
+    /*--【フッター】--*/
 }
 
 /*スマートフォン用レイアウト*/
@@ -13,6 +98,7 @@
     }
     
     /*--コンテンツ見出し--*/
+    
     .heading-title{
         font-size:13px;
     }
@@ -100,9 +186,6 @@
         
     }
     
-    .contents-txt{
-        font-weight:normal;
-    }
     
     /*--【コンテンツ1】--*/
     
@@ -140,12 +223,12 @@
     
     .contents2-txt2{
         margin-top:16px;
+        margin-bottom:30px;
     }
     
     .contents2-txt1 p,.contents2-txt2{
         /*本文サイズ16px*/
         font-size:16px;
-        font-weight:normal;
     }
     
     .contents2-img3{
@@ -166,8 +249,7 @@
     }
     
     .contents2-top{
-        /*見やすいよう少し間隔あける*/
-        margin-top:10%;
+        margin-top:20px;
         /*並べ替え調整用*/
         position:relative;
     }
@@ -187,7 +269,7 @@
     
     .contents2-bottom{
         /*txt1の並べ替えにより被ってしまう為調整*/
-        margin-top:250px;
+        margin-top:230px;
     }
     
     .contents2-btn{
@@ -229,6 +311,7 @@
     }
     
     .footer-menu li{
+        text-align:left;
         /*SP版では左寄せ*/
         padding-left:0;
         display: block;
